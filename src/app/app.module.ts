@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InfoUserDiscoverComponent } from './info-user-discover/info-user-discover.component';
-import { PostImgComponent } from './post-img/post-img.component';
-import { SectionHeadingComponent } from './section-heading/section-heading.component';
+import { InfoUserDiscoverComponent } from './components/discover/info-user-discover/info-user-discover.component';
+import { PostImgComponent } from './components/discover/post-img/post-img.component';
+import { SectionHeadingComponent } from './components/discover/section-heading/section-heading.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from '../in-memory-data.service';
-import { NavbarComponent } from './navbar/navbar.component';
-import { NavbarUploadbuttonComponent } from './navbar-uploadbutton/navbar-uploadbutton.component';
+import { InMemoryDataService } from './services/in-memory-data.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarUploadbuttonComponent } from './components/navbar-uploadbutton/navbar-uploadbutton.component';
+import { DiscoverPageComponent } from './components/discover/discover-page/discover-page.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { NavbarUploadbuttonComponent } from './navbar-uploadbutton/navbar-upload
     PostImgComponent,
     SectionHeadingComponent,
     NavbarComponent,
-    NavbarUploadbuttonComponent
+    NavbarUploadbuttonComponent,
+    DiscoverPageComponent
   ],
   imports: [
     HttpClientModule,
@@ -27,7 +30,8 @@ import { NavbarUploadbuttonComponent } from './navbar-uploadbutton/navbar-upload
       InMemoryDataService, { dataEncapsulation: false }
       ),
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

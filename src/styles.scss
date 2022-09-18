@@ -3,3 +3,11 @@
   font-family: "Comfortaa";
   src: local("Comfortaa"), url(./assets/fonts/Comfortaa/static/Comfortaa-Regular.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url(./assets/fonts/Roboto/Roboto-Black.ttf) format("truetype");
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
