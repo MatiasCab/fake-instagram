@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarUploadbuttonComponent } from './components/navbar-uploadbutton/navbar-uploadbutton.component';
 import { DiscoverPageComponent } from './components/discover/discover-page/discover-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PostCarouselComponent } from './components/post-carousel/post-carousel.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SectionHeadingComponent,
     NavbarComponent,
     NavbarUploadbuttonComponent,
-    DiscoverPageComponent
+    DiscoverPageComponent,
+    PostCarouselComponent
   ],
   imports: [
     HttpClientModule,
