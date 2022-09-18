@@ -9,13 +9,17 @@ import { SectionHeadingComponent } from './section-heading/section-heading.compo
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from '../in-memory-data.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarUploadbuttonComponent } from './navbar-uploadbutton/navbar-uploadbutton.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InfoUserDiscoverComponent,
     PostImgComponent,
-    SectionHeadingComponent
+    SectionHeadingComponent,
+    NavbarComponent,
+    NavbarUploadbuttonComponent
   ],
   imports: [
     HttpClientModule,
