@@ -1,1 +1,3 @@
-<p>post-img works!</p>
+<p *ngFor="let x of images">{{x.idImg}}</p>
+<img *ngFor="let x of images" src="{{x.link}}" alt="x">
+{{getImgs()}}
