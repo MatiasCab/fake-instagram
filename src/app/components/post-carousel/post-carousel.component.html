@@ -1,0 +1,11 @@
+<ngb-carousel #ngcarousel *ngIf="posts"
+  [showNavigationArrows]="showNavigationArrows"
+  [showNavigationIndicators]="showNavigationIndicators"
+>
+  <ng-template ngbSlide *ngFor="let post of posts">
+    <div draggable="true" (touchstart)="captureSwipeStart($event)" (touchend)="swipePost($event)">
+      <app-post-img [image]="post"></app-post-img>
+      <app-info-user-discover [user]="post.postedBy"></app-info-user-discover>
+    </div>
+  </ng-template>
+</ngb-carousel>
