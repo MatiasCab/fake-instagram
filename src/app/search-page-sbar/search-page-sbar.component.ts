@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchPageSbarComponent implements OnInit {
 
+  searchinput = "";
   constructor() { }
 
   ngOnInit(): void {
   }
+  getSearchedImg() {
 
+    if (this.searchinput == "dog") {
+      console.log(this.searchinput);
+    }
+    return true;
+  }
+  
 }

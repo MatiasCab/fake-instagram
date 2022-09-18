@@ -9,6 +9,7 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { SearchPageGrillaComponent } from './search-page-grilla/search-page-grilla.component';
 import { ToptitleComponent } from './toptitle/toptitle.component';
 import { SearchPageSbarComponent } from './search-page-sbar/search-page-sbar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SearchPageSbarComponent } from './search-page-sbar/search-page-sbar.com
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
