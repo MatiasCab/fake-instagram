@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PostImg } from 'src/PostImg';
 import { DiscoverImgsService } from 'src/discover-imgs.service';
-import { TitleStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-post-img',
