@@ -11,6 +11,11 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarUploadbuttonComponent } from './components/navbar-uploadbutton/navbar-uploadbutton.component';
+import { SearchPageComponent } from './search-page/search-page.component';
+import { SearchPageGrillaComponent } from './search-page-grilla/search-page-grilla.component';
+import { ToptitleComponent } from './toptitle/toptitle.component';
+import { SearchPageSbarComponent } from './search-page-sbar/search-page-sbar.component';
+import { FormsModule } from '@angular/forms';
 import { DiscoverPageComponent } from './components/discover/discover-page/discover-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PostCarouselComponent } from './components/post-carousel/post-carousel.component';
@@ -27,7 +32,11 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NavbarUploadbuttonComponent,
     DiscoverPageComponent,
     PostCarouselComponent,
-    FullSizedImageComponent
+    FullSizedImageComponent,
+    SearchPageComponent,
+    SearchPageGrillaComponent,
+    ToptitleComponent,
+    SearchPageSbarComponent
   ],
   imports: [
     HttpClientModule,
@@ -35,6 +44,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
       InMemoryDataService, { dataEncapsulation: false }
       ),
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule
