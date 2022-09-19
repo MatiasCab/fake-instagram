@@ -9,7 +9,7 @@ import { trigger, style, animate, transition} from '@angular/animations';
   animations: [ 
     trigger("openClose", [
     transition("* => open", [
-      style({ transform: "translateY(100%)"}),
+      style({ transform: "translateY(50%)"}),
       animate('0.2s', style({ transform: "translateY(0%)"}))
     ]),
     transition("open => *", [
