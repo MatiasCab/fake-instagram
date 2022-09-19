@@ -1,9 +1,7 @@
 <div class="container user-info">
     <div class="row gx-2 pt-3">
         <div class="col-auto">
-          <div class="image-cropper">
-            <img src ="{{user.iconUrl}}" class="fi-image" alt="{{user.name}}">
-          </div>
+          <app-user-icon [user]="user"></app-user-icon>
         </div>
         <div class="col">
             <h5 class="fi-user {{colorScheme}}">{{user.name}}</h5>
