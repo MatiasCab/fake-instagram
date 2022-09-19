@@ -2,12 +2,12 @@
     <div class="row gx-2 pt-3">
         <div class="col-auto">
           <div class="image-cropper">
-            <img src ="{{user.iconUrl}}" class="fi-image" alt="...">
+            <img src ="{{user.iconUrl}}" class="fi-image" alt="{{user.name}}">
           </div>
         </div>
         <div class="col">
-            <h5 class="fi-user">{{user.name}}</h5>
-            <p class="card-text fi-user-name">@{{user.username}}</p>
+            <h5 class="fi-user {{colorScheme}}">{{user.name}}</h5>
+            <p class="fi-user-name {{colorScheme}}">@{{user.username}}</p>
         </div>
     </div>
 </div>

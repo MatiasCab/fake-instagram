@@ -14,6 +14,7 @@ import { NavbarUploadbuttonComponent } from './components/navbar-uploadbutton/na
 import { DiscoverPageComponent } from './components/discover/discover-page/discover-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PostCarouselComponent } from './components/post-carousel/post-carousel.component';
+import { FullSizedImageComponent } from './components/full-sized-image/full-sized-image.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PostCarouselComponent } from './components/post-carousel/post-carousel.
     NavbarComponent,
     NavbarUploadbuttonComponent,
     DiscoverPageComponent,
-    PostCarouselComponent
+    PostCarouselComponent,
+    FullSizedImageComponent
   ],
   imports: [
     HttpClientModule,

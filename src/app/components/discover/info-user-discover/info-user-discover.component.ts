@@ -9,10 +9,17 @@ import { User } from 'src/app/interfaces/User';
 export class InfoUserDiscoverComponent implements OnInit {
 
   @Input() user!: User;
+  @Input() isDarkMode?: boolean;
 
+  get colorScheme(): 'light' | 'dark' {
+    return this.isDarkMode ? 'dark' : 'light';
+  }
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  
+  
 }
