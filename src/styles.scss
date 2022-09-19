@@ -9,5 +9,10 @@
   src: local("Roboto"), url(./assets/fonts/Roboto/Roboto-Black.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto"), url(./assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
