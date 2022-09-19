@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { PostImg } from '../interfaces/PostImg';
-import { User } from '../interfaces/User';
 
 @Injectable({
   providedIn: 'root'
