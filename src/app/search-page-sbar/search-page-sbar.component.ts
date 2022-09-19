@@ -8,7 +8,7 @@ import { PostImg } from 'src/PostImg';
 })
 export class SearchPageSbarComponent implements OnInit {
   
-  @Output() searchinput = new EventEmitter<string>();
+  @Output() searchInputEvent = new EventEmitter<string>();
   
   input = '';
   imgs: PostImg[] = [];
@@ -20,6 +20,6 @@ export class SearchPageSbarComponent implements OnInit {
   }
 
  search(){  
-    this.searchinput.emit(this.input);
+    this.searchInputEvent.emit(this.input);
  }
 }
