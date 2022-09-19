@@ -16,7 +16,7 @@ export class PostImgComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  @ViewChild('hiddenElement', { static: false }) fullSizedImgElement!: FullSizedImageComponent;
+  @ViewChild('hiddenElement') fullSizedImgElement!: FullSizedImageComponent;
 
   openImage(){
     this.fullSizedImgElement.show();
