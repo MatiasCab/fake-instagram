@@ -15,6 +15,7 @@ import { DiscoverPageComponent } from './components/discover/discover-page/disco
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PostCarouselComponent } from './components/post-carousel/post-carousel.component';
 import { FullSizedImageComponent } from './components/full-sized-image/full-sized-image.component';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FullSizedImageComponent } from './components/full-sized-image/full-size
       ),
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

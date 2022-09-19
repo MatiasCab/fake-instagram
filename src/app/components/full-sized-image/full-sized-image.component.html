@@ -1,4 +1,4 @@
-<div class="full-sized-image" *ngIf="isDisplaying">
+<div class="full-sized-image" *ngIf="isDisplaying" [@openClose]="this.isDisplaying ? 'open' : 'closed'">
     <div class="gradient position-fixed"></div>
     <div class="mx-2 my-4 user-info-front d-flex">
         <app-info-user-discover *ngIf="user" [user]="user" [isDarkMode]="true"></app-info-user-discover> 
