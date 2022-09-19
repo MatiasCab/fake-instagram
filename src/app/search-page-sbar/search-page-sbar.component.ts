@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DiscoverImgsService } from 'src/discover-imgs.service';
+import { PostImg } from 'src/PostImg';
 
 @Component({
   selector: 'app-search-page-sbar',
@@ -7,17 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchPageSbarComponent implements OnInit {
 
+  imgs: PostImg[] = [];
+
   searchinput = "";
-  constructor() { }
+  constructor( private discoverImgsService: DiscoverImgsService) { }
 
   ngOnInit(): void {
   }
-  getSearchedImg() {
+  getSearchedImg(searchinput:string): void {
 
     if (this.searchinput == "dog") {
       console.log(this.searchinput);
     }
-    return true;
+    this.discoverImgsService.getArrayOfImgs().subscribe(imgs => this.imgs = imgs);
   }
   
+ 
 }

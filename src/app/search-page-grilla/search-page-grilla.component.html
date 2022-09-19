@@ -1,8 +1,16 @@
-<p>search-page-grilla works!</p>
 <!--<div class="container">
-    <div class="row" id="target">
+<div class="row" id="target">
         <div class="col-sm-4 mb-3" *ngFor="let nota of notas | keyvalue">
             <app-note [note]="nota.value"></app-note>
         </div>
     </div>
-</div> -->
+</div>
+ -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 mb-3 border grid" *ngFor="let img of imgs">
+            <img src="{{img?.link}}" alt="">
+        </div>
+    </div>
+</div>
+{{ getArrayOfImgs()}}
