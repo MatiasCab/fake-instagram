@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PostImg } from 'src/app/interfaces/PostImg';
 import { trigger, style, animate, transition} from '@angular/animations';
+import { User } from 'src/app/interfaces/User';
 
 @Component({
   selector: 'app-full-sized-image',
@@ -24,11 +25,8 @@ export class FullSizedImageComponent implements OnInit {
 
  
   @Input() image!: PostImg;
+  @Input() user!: User;
   isDisplaying: boolean = false;
-
-  get user() {
-    return this.image ? this.image.postedBy : undefined;
-  }
 
   ngOnInit(): void {
   }

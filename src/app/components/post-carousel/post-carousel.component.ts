@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import {NgbCarousel, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import { Post } from 'src/app/interfaces/Post';
 
 import { PostImg } from 'src/app/interfaces/PostImg';
 
@@ -10,7 +11,7 @@ import { PostImg } from 'src/app/interfaces/PostImg';
   providers: [NgbCarouselConfig]
 })
 export class PostCarouselComponent implements OnInit {
-  @Input() posts!: PostImg[];
+  @Input() posts!: Post[];
 
   swipeStartXPos?: number = undefined;
 

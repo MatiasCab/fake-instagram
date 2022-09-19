@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { PostImg } from 'src/app/interfaces/PostImg';
+import { User } from 'src/app/interfaces/User';
 import { FullSizedImageComponent } from '../../full-sized-image/full-sized-image.component';
 
 @Component({
@@ -10,6 +11,7 @@ import { FullSizedImageComponent } from '../../full-sized-image/full-sized-image
 export class PostImgComponent implements OnInit {
 
   @Input() image!: PostImg;
+  @Input() user!: User;
 
   constructor() { }
 
