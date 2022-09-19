@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { PostImg } from 'src/app/interfaces/PostImg';
 import { DiscoverImgsService } from 'src/app/services/discover-imgs.service';
+import { FullSizedImageComponent } from '../../full-sized-image/full-sized-image.component';
 
 @Component({
   selector: 'app-post-img',
@@ -15,6 +16,11 @@ export class PostImgComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+  @ViewChild('hiddenElement', { static: false }) fullSizedImgElement!: FullSizedImageComponent;
+
+  openImage(){
+    this.fullSizedImgElement.show();
   }
 
 
