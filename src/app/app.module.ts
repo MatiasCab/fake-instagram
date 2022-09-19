@@ -16,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PostCarouselComponent } from './components/post-carousel/post-carousel.component';
 import { FullSizedImageComponent } from './components/full-sized-image/full-sized-image.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NavbarUploadbuttonComponent,
     DiscoverPageComponent,
     PostCarouselComponent,
-    FullSizedImageComponent
+    FullSizedImageComponent,
+    ChatComponent
   ],
   imports: [
     HttpClientModule,
