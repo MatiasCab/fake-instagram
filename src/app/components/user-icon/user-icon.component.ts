@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class UserIconComponent implements OnInit {
   @Input() user!: User;
+  @Input() height?: string;
+  @Input() width?: string;
 
   constructor() { }
 

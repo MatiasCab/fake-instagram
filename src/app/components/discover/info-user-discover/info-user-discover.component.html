@@ -1,7 +1,9 @@
 <div class="container user-info">
     <div class="row gx-2 pt-3">
         <div class="col-auto">
-          <app-user-icon class="user-icon" [user]="user"></app-user-icon>
+          <div class="user-info-icon">
+            <app-user-icon  [user]="user"></app-user-icon>
+          </div>
         </div>
         <div class="col">
             <h5 class="fi-user {{colorScheme}}">{{user.name}}</h5>

@@ -14,5 +14,16 @@
   src: local("Roboto"), url(./assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 
+.icon-cropper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.user-info-icon .icon-cropper  {
+  width: 2rem;
+  height: 2rem;
+}
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
