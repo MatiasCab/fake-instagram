@@ -1,6 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { PostImg } from 'src/app/interfaces/PostImg';
-import { DiscoverImgsService } from 'src/app/services/discover-imgs.service';
 import { FullSizedImageComponent } from '../../full-sized-image/full-sized-image.component';
 
 @Component({

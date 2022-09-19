@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import {NgbCarousel, NgbCarouselConfig, NgbSlideEvent} from '@ng-bootstrap/ng-bootstrap';
+import {NgbCarousel, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 
 import { PostImg } from 'src/app/interfaces/PostImg';
 

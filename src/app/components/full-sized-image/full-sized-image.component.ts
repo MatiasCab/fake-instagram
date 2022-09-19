@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PostImg } from 'src/app/interfaces/PostImg';
-import { User } from 'src/app/interfaces/User';
-import { trigger, state, style, animate, transition} from '@angular/animations';
+import { trigger, style, animate, transition} from '@angular/animations';
 
 @Component({
   selector: 'app-full-sized-image',
