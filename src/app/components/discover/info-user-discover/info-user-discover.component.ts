@@ -7,19 +7,15 @@ import { User } from 'src/app/interfaces/User';
   styleUrls: ['./info-user-discover.component.scss']
 })
 export class InfoUserDiscoverComponent implements OnInit {
-
   @Input() user!: User;
   @Input() isDarkMode?: boolean;
 
   get colorScheme(): 'light' | 'dark' {
     return this.isDarkMode ? 'dark' : 'light';
   }
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  
-  
 }
