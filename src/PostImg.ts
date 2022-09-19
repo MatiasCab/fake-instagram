@@ -4,4 +4,5 @@ export interface PostImg {
     user: User;
     idImg: string;
     link: string;
+    category: string[];
 }

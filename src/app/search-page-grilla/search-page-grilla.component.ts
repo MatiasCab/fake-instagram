@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DiscoverImgsService } from 'src/discover-imgs.service';
 import { PostImg } from 'src/PostImg';
 
@@ -9,16 +9,15 @@ import { PostImg } from 'src/PostImg';
 })
 export class SearchPageGrillaComponent implements OnInit {
 
+  @Input() imgs: PostImg[] = [];
 
-  imgs: PostImg[] = [];
-
-  constructor( private discoverImgsService: DiscoverImgsService) { }
+  constructor(private discoverImgsService: DiscoverImgsService) { }
 
   ngOnInit(): void {
-    this.getArrayOfImgs();
+  //  this.getArrayOfImgs();
   }
 
-  getArrayOfImgs(): void {
-    this.discoverImgsService.getArrayOfImgs().subscribe(imgs => this.imgs = imgs);
-  }
+  //getArrayOfImgs(): void {
+//    this.discoverImgsService.getArrayOfImgs().subscribe(imgs => this.imgs = imgs);
+ // }
 }

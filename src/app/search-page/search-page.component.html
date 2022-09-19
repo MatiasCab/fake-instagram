@@ -1,6 +1,9 @@
 <div class="principal">
     <app-toptitle [title]="title"></app-toptitle>
     <app-navbar></app-navbar>
-    <app-search-page-sbar></app-search-page-sbar>
-    <app-search-page-grilla></app-search-page-grilla>
+    <app-search-page-sbar (searchinput)="getSearchedImg($event)"></app-search-page-sbar>
+    <p *ngIf="searchresult" > 
+        ALL RESULTS
+    </p>
+    <app-search-page-grilla [imgs]="imgs"></app-search-page-grilla>
 </div>
