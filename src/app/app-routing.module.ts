@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UnploadPageComponent } from './components/unpload-page/unpload-page.component';
+import { UnploadPageComponent } from './components/upload-page/upload-page.component';
 import { DiscoverPageComponent } from './components/discover/discover-page/discover-page.component';
 
-const routes: Routes = [{ path: 'unploadPhoto', component: UnploadPageComponent},
-                        { path: 'home', component: DiscoverPageComponent},
-                        { path: '', redirectTo: '/home', pathMatch: 'full'}];
+const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: 'uploadPhoto', component: UnploadPageComponent},
+  { path: 'home', component: DiscoverPageComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

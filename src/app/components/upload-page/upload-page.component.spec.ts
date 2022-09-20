@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UnploadPageComponent } from './unpload-page.component';
+import { UnploadPageComponent } from './upload-page.component';
 
 describe('UnploadPageComponent', () => {
   let component: UnploadPageComponent;
