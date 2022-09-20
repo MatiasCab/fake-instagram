@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToptitleComponent } from './toptitle.component';
+import { UploadPageComponent } from './upload-page.component';
 
-describe('ToptitleComponent', () => {
-  let component: ToptitleComponent;
-  let fixture: ComponentFixture<ToptitleComponent>;
+describe('UploadPageComponent', () => {
+  let component: UploadPageComponent;
+  let fixture: ComponentFixture<UploadPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ToptitleComponent ]
+      declarations: [ UploadPageComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ToptitleComponent);
+    fixture = TestBed.createComponent(UploadPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

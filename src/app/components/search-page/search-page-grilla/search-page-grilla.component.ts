@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DiscoverImgsService } from 'src/app/services/discover-imgs.service';
+import { Post } from 'src/app/interfaces/Post';
 import { PostImg } from 'src/app/interfaces/PostImg';
 
 @Component({
@@ -9,7 +10,7 @@ import { PostImg } from 'src/app/interfaces/PostImg';
 })
 export class SearchPageGrillaComponent implements OnInit {
 
-  @Input() imgs: PostImg[] = [];
+  @Input() posts: Post[] = [];
 
   constructor(private discoverImgsService: DiscoverImgsService) { }
 

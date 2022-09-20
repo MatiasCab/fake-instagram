@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
-import { PostImg } from 'src/PostImg';
+import { PostImg } from 'src/app/interfaces/PostImg';
 
 @Component({
   selector: 'app-search-page-sbar',

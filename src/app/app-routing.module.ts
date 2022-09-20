@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DiscoverPageComponent } from './components/discover/discover-page/discover-page.component';
+import { SearchPageComponent } from './components/search-page/search-page.component';
+import { UploadPageComponent } from './components/upload-page/upload-page.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: 'uploadPhoto', component: UploadPageComponent},
+  { path: 'home', component: DiscoverPageComponent},
+  { path: 'search', component: SearchPageComponent}
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
