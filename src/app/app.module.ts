@@ -32,13 +32,10 @@ import { UnploadPageComponent } from './components/unpload-page/unpload-page.com
     DiscoverPageComponent,
     PostCarouselComponent,
     FullSizedImageComponent,
-<<<<<<< HEAD
     UserIconComponent,
     ProfileHeaderComponent,
-    ProfilePageComponent
-=======
+    ProfilePageComponent,
     UnploadPageComponent
->>>>>>> 7fe74bc930b557acd51b2a1f550dd7423aa2b33a
   ],
   imports: [
     HttpClientModule,
