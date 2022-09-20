@@ -16,7 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PostCarouselComponent } from './components/post-carousel/post-carousel.component';
 import { FullSizedImageComponent } from './components/full-sized-image/full-sized-image.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { UnploadPageComponent } from './components/unpload-page/unpload-page.component';
+import { UploadPageComponent } from './components/upload-page/upload-page.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { UnploadPageComponent } from './components/unpload-page/unpload-page.com
     DiscoverPageComponent,
     PostCarouselComponent,
     FullSizedImageComponent,
-    UnploadPageComponent
+    UploadPageComponent
   ],
   imports: [
     HttpClientModule,
