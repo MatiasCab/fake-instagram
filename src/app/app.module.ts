@@ -21,6 +21,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PostCarouselComponent } from './components/post-carousel/post-carousel.component';
 import { FullSizedImageComponent } from './components/full-sized-image/full-sized-image.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { UnploadPageComponent } from './components/unpload-page/unpload-page.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
     SearchPageGrillaComponent,
     ToptitleComponent,
     SearchPageSbarComponent
+    UnploadPageComponent
   ],
   imports: [
     HttpClientModule,
