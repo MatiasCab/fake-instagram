@@ -17,6 +17,7 @@ import { PostCarouselComponent } from './components/post-carousel/post-carousel.
 import { FullSizedImageComponent } from './components/full-sized-image/full-sized-image.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { UploadPageComponent } from './components/upload-page/upload-page.component';
+import { UploadButtonComponent } from './components/upload-page/upload-button/upload-button.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { UploadPageComponent } from './components/upload-page/upload-page.compon
     DiscoverPageComponent,
     PostCarouselComponent,
     FullSizedImageComponent,
-    UploadPageComponent
+    UploadPageComponent,
+    UploadButtonComponent
   ],
   imports: [
     HttpClientModule,
