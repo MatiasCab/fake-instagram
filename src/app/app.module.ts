@@ -23,9 +23,11 @@ import { DiscoverPageComponent } from './components/discover/discover-page/disco
 import { PostCarouselComponent } from './components/post-carousel/post-carousel.component';
 import { FullSizedImageComponent } from './components/full-sized-image/full-sized-image.component';
 import { UploadPageComponent } from './components/upload-page/upload-page.component';
+import { UploadButtonComponent } from './components/upload-page/upload-button/upload-button.component';
 
 import { InMemoryDataService } from './services/in-memory-data.service';
 import { DiscoverImgsService } from './services/discover-imgs.service';
+import { UploadDescriptionBarComponent } from './components/upload-page/upload-description-bar/upload-description-bar.component';
 
 
 @NgModule({
@@ -39,10 +41,12 @@ import { DiscoverImgsService } from './services/discover-imgs.service';
     DiscoverPageComponent,
     PostCarouselComponent,
     FullSizedImageComponent,
+    UploadPageComponent,
+    UploadButtonComponent,
     SearchPageComponent,
     SearchPageGrillaComponent,
     SearchPageSbarComponent,
-    UploadPageComponent
+    UploadDescriptionBarComponent,
   ],
   imports: [
     HttpClientModule,

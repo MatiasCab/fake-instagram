@@ -23,9 +23,9 @@ export class SearchPageComponent implements OnInit {
   getSearchedImg(searchinput: string): void {
     this.searchresult = true;
     if (searchinput == '') {
-      this.discoverImgsService.getArrayOfImgs().subscribe((posts => this.posts = posts));
+      this.discoverImgsService.getArrayOfImgs().subscribe(posts => this.posts = posts);
     } else {
-      this.discoverImgsService.getArrayOfSearchedImgs(searchinput).subscribe((posts => this.posts = posts));
+      this.discoverImgsService.getArrayOfSearchedImgs(searchinput).subscribe(posts => this.posts = posts);
     }
   }
 }

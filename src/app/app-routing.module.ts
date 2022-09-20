@@ -9,7 +9,6 @@ const routes: Routes = [
   { path: 'uploadPhoto', component: UploadPageComponent},
   { path: 'home', component: DiscoverPageComponent},
   { path: 'search', component: SearchPageComponent}
-
 ];
 
 @NgModule({
