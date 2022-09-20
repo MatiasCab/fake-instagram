@@ -11,9 +11,12 @@ export class DiscoverImgsService {
 
   constructor(private http: HttpClient) { }
 
-  private imgsUrl = "api/posts"
+  private imgsUrl = 'api/posts';
 
   getArrayOfImgs(): Observable<Post[]> {
     return this.http.get<Post[]>(this.imgsUrl);
+  }
+  getArrayOfSearchedImgs(value: string): Observable<Post[]> {
+    return this.http.get<Post[]>(this.imgsUrl + `?tags=${value}`);
   }
 }
