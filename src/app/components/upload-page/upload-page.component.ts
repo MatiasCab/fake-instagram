@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-unpload-page',
+  selector: 'app-upload-page',
   templateUrl: './upload-page.component.html',
   styleUrls: ['./upload-page.component.scss']
 })
-export class UnploadPageComponent implements OnInit {
+export class UploadPageComponent implements OnInit {
 
   constructor() { }
 
