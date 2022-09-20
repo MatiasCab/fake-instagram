@@ -19,6 +19,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { UserIconComponent } from './components/user-icon/user-icon.component';
 import { ProfileHeaderComponent } from './components/profile/profile-header/profile-header.component';
 import { ProfilePageComponent } from './components/profile/profile-page/profile-page.component';
+import { UnploadPageComponent } from './components/unpload-page/unpload-page.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +32,13 @@ import { ProfilePageComponent } from './components/profile/profile-page/profile-
     DiscoverPageComponent,
     PostCarouselComponent,
     FullSizedImageComponent,
+<<<<<<< HEAD
     UserIconComponent,
     ProfileHeaderComponent,
     ProfilePageComponent
+=======
+    UnploadPageComponent
+>>>>>>> 7fe74bc930b557acd51b2a1f550dd7423aa2b33a
   ],
   imports: [
     HttpClientModule,

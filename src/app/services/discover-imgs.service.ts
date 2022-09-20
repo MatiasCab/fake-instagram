@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { PostImg } from 'src/app/interfaces/PostImg';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Post } from '../interfaces/Post';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +11,9 @@ export class DiscoverImgsService {
 
   constructor(private http: HttpClient) { }
 
-  private imgsUrl = "api/imgs"
+  private imgsUrl = "api/posts"
 
-  getArrayOfImgs(): Observable<PostImg[]> {
-    return this.http.get<PostImg[]>(this.imgsUrl);
+  getArrayOfImgs(): Observable<Post[]> {
+    return this.http.get<Post[]>(this.imgsUrl);
   }
 }

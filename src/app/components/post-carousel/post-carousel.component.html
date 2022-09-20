@@ -4,8 +4,8 @@
 >
   <ng-template ngbSlide *ngFor="let post of posts">
     <div (touchstart)="captureSwipeStart($event)" (touchend)="swipePost($event)">
-      <app-post-img [image]="post"></app-post-img>
-      <app-info-user-discover [user]="post.postedBy"></app-info-user-discover>
+      <app-post-img [image]="post.postImg" [user]="post.user"></app-post-img>
+      <app-info-user-discover [user]="post.user"></app-info-user-discover>
     </div>
   </ng-template>
 </ngb-carousel>
