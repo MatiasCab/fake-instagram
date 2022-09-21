@@ -22,4 +22,16 @@ export class ProfileService {
     this.mockFollow = !this.mockFollow;
     return this.mockFollow;
   }
+
+  getUserById(id: string) {
+    const user = {
+      name: 'Carlitos',
+      username: 'carlitossoyyo',
+      iconUrl: '/assets/images/img2.jpg',
+      city: 'San Francisco',
+      state: 'CA'
+    };
+
+    return user;
+  }
 }

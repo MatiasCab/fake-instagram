@@ -1,3 +1,5 @@
+import { ProfileService } from './../../../services/profile.service';
+import { ActivatedRoute } from '@angular/router';
 import { User } from './../../../interfaces/User';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,17 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-page.component.scss']
 })
 export class ProfilePageComponent implements OnInit {
-  user: User = {
-    name: 'Carlitos',
-    username: 'carlitossoyyo',
-    iconUrl: '/assets/images/img2.jpg',
-    city: 'San Francisco',
-    state: 'CA'
-  };
+  user!: User;
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute, private profileService: ProfileService) { }
 
   ngOnInit(): void {
+    const username = this.activatedRoute.snapshot.paramMap.get('username');
+    if (username) {
+      this.user = this.profileService.getUserById(username);
+    }
   }
 
 }

@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 import { Post } from 'src/app/interfaces/Post';
 import { User } from 'src/app/interfaces/User';
 import { ProfileService } from 'src/app/services/profile.service';
@@ -20,5 +22,4 @@ export class ProfilePhotoGridComponent implements OnInit {
       this.posts = posts;
     });
   }
-
 }

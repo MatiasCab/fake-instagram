@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'unploadPhoto', component: UnploadPageComponent},
   { path: 'home', component: DiscoverPageComponent},
-  { path: 'profile', component: ProfilePageComponent}
+  { path: 'profile/:username', component: ProfilePageComponent}
 ];
 
 @NgModule({
