@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { UnploadPageComponent } from './components/unpload-page/unpload-page.component';
 import { DiscoverPageComponent } from './components/discover/discover-page/discover-page.component';
 import { ProfilePageComponent } from './components/profile/profile-page/profile-page.component';
+import { SearchPageComponent } from './components/search-page/search-page.component';
+import { UploadPageComponent } from './components/upload-page/upload-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'unploadPhoto', component: UnploadPageComponent},
+  { path: 'uploadPhoto', component: UploadPageComponent},
   { path: 'home', component: DiscoverPageComponent},
-  { path: 'profile/:username', component: ProfilePageComponent}
+  { path: 'profile/:username', component: ProfilePageComponent},
+  { path: 'search', component: SearchPageComponent}
 ];
 
 @NgModule({

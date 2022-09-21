@@ -47,6 +47,13 @@
 .user-profile-icon .icon-cropper {
   width: 8rem;
   height: 8rem;
+.form-control {
+  &.fi-style {
+      border-radius: 0ex;
+      font-family: 'sans-serif';
+      background: #FFFFFF;
+      border: 2px solid #000000;
+  }
 }
 
 /* Importing Bootstrap SCSS file. */
