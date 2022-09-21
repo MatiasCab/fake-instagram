@@ -20,6 +20,7 @@ import { UserIconComponent } from './components/user-icon/user-icon.component';
 import { ProfileHeaderComponent } from './components/profile/profile-header/profile-header.component';
 import { ProfilePageComponent } from './components/profile/profile-page/profile-page.component';
 import { UnploadPageComponent } from './components/unpload-page/unpload-page.component';
+import { ProfilePhotoGridComponent } from './components/profile/profile-photo-grid/profile-photo-grid.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { UnploadPageComponent } from './components/unpload-page/unpload-page.com
     UserIconComponent,
     ProfileHeaderComponent,
     ProfilePageComponent,
-    UnploadPageComponent
+    UnploadPageComponent,
+    ProfilePhotoGridComponent
   ],
   imports: [
     HttpClientModule,

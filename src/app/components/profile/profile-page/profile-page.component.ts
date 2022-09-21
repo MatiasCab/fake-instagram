@@ -10,7 +10,9 @@ export class ProfilePageComponent implements OnInit {
   user: User = {
     name: 'Carlitos',
     username: 'carlitossoyyo',
-    iconUrl: '/assets/images/img2.jpg'
+    iconUrl: '/assets/images/img2.jpg',
+    city: 'San Francisco',
+    state: 'CA'
   };
 
   constructor() { }

@@ -1,0 +1,35 @@
+.icon-width {
+  width: 80% !important;
+}
+
+.fi-follow-button {
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+  height: 3.5rem;
+
+  border: 2px solid #000000;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: white;
+
+  &.dark {
+    background: #000000;
+    color: white;
+  }
+}
+
+.fi-follow-button:active {
+  background: #181818;
+  color: white;
+
+  &.dark {
+    background: rgb(233, 232, 232);
+    color: black;
+  }
+
+}
