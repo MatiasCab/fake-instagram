@@ -14,6 +14,25 @@
   src: local("Roboto"), url(./assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 
+.fi-subtitle {
+  width: 132px;
+  height: 15px;
+  left: 16px;
+  top: 148px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.8rem;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
 .icon-cropper {
   position: relative;
   overflow: hidden;
@@ -23,6 +42,11 @@
 .user-info-icon .icon-cropper  {
   width: 2rem;
   height: 2rem;
+}
+
+.user-profile-icon .icon-cropper {
+  width: 8rem;
+  height: 8rem;
 }
 
 /* Importing Bootstrap SCSS file. */

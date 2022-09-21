@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { DiscoverImgsService } from 'src/app/services/discover-imgs.service';
 import { PostImg } from 'src/app/interfaces/PostImg';
+import { Post } from 'src/app/interfaces/Post';
 
 @Component({
   selector: 'app-discover-page',
@@ -9,14 +10,14 @@ import { PostImg } from 'src/app/interfaces/PostImg';
   styleUrls: ['./discover-page.component.scss']
 })
 export class DiscoverPageComponent implements OnInit {
-  postImgs: PostImg[] = [];
+  posts: Post[] = [];
 
   constructor(private discoverImgsService: DiscoverImgsService) { }
 
   ngOnInit(): void {
     this.discoverImgsService.getArrayOfImgs()
     .subscribe(imgs => {
-      this.postImgs = imgs;
+      this.posts = imgs;
     });
   }
 

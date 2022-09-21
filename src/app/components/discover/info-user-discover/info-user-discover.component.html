@@ -6,7 +6,9 @@
           </div>
         </div>
         <div class="col">
-            <h5 class="fi-user {{colorScheme}}">{{user.name}}</h5>
+            <a routerLink="/profile/{{user.username}}" class="text-decoration-none">
+              <h5 class="fi-user {{colorScheme}}">{{user.name}}</h5>
+            </a>
             <p class="fi-user-name {{colorScheme}}">@{{user.username}}</p>
         </div>
     </div>

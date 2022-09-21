@@ -17,6 +17,10 @@ import { PostCarouselComponent } from './components/post-carousel/post-carousel.
 import { FullSizedImageComponent } from './components/full-sized-image/full-sized-image.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { UserIconComponent } from './components/user-icon/user-icon.component';
+import { ProfileHeaderComponent } from './components/profile/profile-header/profile-header.component';
+import { ProfilePageComponent } from './components/profile/profile-page/profile-page.component';
+import { UnploadPageComponent } from './components/unpload-page/unpload-page.component';
+import { ProfilePhotoGridComponent } from './components/profile/profile-photo-grid/profile-photo-grid.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { UserIconComponent } from './components/user-icon/user-icon.component';
     DiscoverPageComponent,
     PostCarouselComponent,
     FullSizedImageComponent,
-    UserIconComponent
+    UserIconComponent,
+    ProfileHeaderComponent,
+    ProfilePageComponent,
+    UnploadPageComponent,
+    ProfilePhotoGridComponent
   ],
   imports: [
     HttpClientModule,
